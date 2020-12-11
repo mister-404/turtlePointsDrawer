@@ -1,11 +1,13 @@
-from Points import *
+from Point import Point
+from DrawData import DrawData
 import turtle
 import re
 
 turt = turtle.Turtle()
 turt.speed("fastest")
 turt.hideturtle()
-scale = 20
+turt.pensize(8)
+SCALE = 20
 
 drawSet = []
 
@@ -35,7 +37,7 @@ for block in drawSet:
     firstPoint = True
 
     for point in block.points:
-        turt.goto(point.x * scale, point.y * scale)
+        turt.goto(point.x * SCALE, point.y * SCALE)
         if firstPoint:
             firstPoint = False
             turt.pendown()
@@ -43,5 +45,10 @@ for block in drawSet:
     turt.penup()
 
 turt.home()
+
+turt.color("red")
+turt.goto(0, -500)
+turt.write("Merry Christmas", True, "center",
+           font=("Arial", 100, "normal", "bold", "underline"))
 
 input('Press Enter to exit')
