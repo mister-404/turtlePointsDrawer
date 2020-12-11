@@ -1,11 +1,19 @@
+import os
 from Point import Point
 from DrawData import DrawData
 import turtle
 import re
 
+print(os.getcwd())
+os.chdir(os.getcwd())
+
+screen = turtle.Screen()
+# hollyShape = screen.register_shape("imgs/wreathSmall.gif")
 turt = turtle.Turtle()
 turt.speed("fastest")
-turt.hideturtle()
+turtle.register_shape(os.getcwd() + "/imgs/wreathSmall.gif")
+turt.shape(os.getcwd() + "/imgs/wreathSmall.gif")
+# turt.hideturtle()
 turt.pensize(8)
 SCALE = 20
 
