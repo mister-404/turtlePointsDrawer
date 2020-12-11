@@ -8,12 +8,10 @@ print(os.getcwd())
 os.chdir(os.getcwd())
 
 screen = turtle.Screen()
-# hollyShape = screen.register_shape("imgs/wreathSmall.gif")
 turt = turtle.Turtle()
 turt.speed("fastest")
 turtle.register_shape(os.getcwd() + "/imgs/wreathSmall.gif")
 turt.shape(os.getcwd() + "/imgs/wreathSmall.gif")
-# turt.hideturtle()
 turt.pensize(8)
 SCALE = 20
 
