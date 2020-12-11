@@ -56,5 +56,6 @@ turt.color("red")
 turt.goto(0, -500)
 turt.write("Merry Christmas", True, "center",
            font=("Arial", 100, "normal", "bold", "underline"))
+turt.goto(0, -200)
 
 input('Press Enter to exit')
