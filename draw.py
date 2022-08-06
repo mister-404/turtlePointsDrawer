@@ -7,7 +7,7 @@ turt = turtle.Turtle()
 turt.speed("fastest")
 turt.hideturtle()
 turt.pensize(8)
-SCALE = 20
+SCALE = 10
 
 drawSet = []
 
@@ -47,8 +47,8 @@ for block in drawSet:
 turt.home()
 
 turt.color("red")
-turt.goto(0, -500)
+turt.goto(0, -200)
 turt.write("Merry Christmas", True, "center",
-           font=("Arial", 100, "normal", "bold", "underline"))
+           font=("Arial",  int(SCALE * 2), "normal", "bold", "underline"))
 
 input('Press Enter to exit')
